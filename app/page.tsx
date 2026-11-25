@@ -283,7 +283,7 @@ const services=[
 {n:"04",icon:Code2,title:"Custom applications",desc:"Responsive web apps and useful tools that solve specific business problems.",items:"React · Next.js · MERN · PHP"},
 {n:"05",icon:Database,title:"API & integrations",desc:"Connect your applications, data and third-party services into a reliable workflow.",items:"REST APIs · Authentication · WebSockets"},
 {n:"06",icon:Wrench,title:"Redesign & support",desc:"Improve an existing website, fix usability issues and add new functionality.",items:"UI refresh · Bug fixes · Maintenance"}];
-const featured=["betterinu-website","erp-pos","vernon-men","staykerala","rabbit-ecommerce","labcare-clinical-os","betterinu-lms","fern-flow","spices-website","moneytrack"];
+const featured=["erp-pos","betterinu-lms","lab-clinic-management","betterinu-website","apzxrtra-lms","crm-live","overprint","d3media-scraper","d3-sms","vernon-men"];
 const imageFor=(p:typeof sourceProjects[number])=>p.id==="erp-pos"?"/erp.png":p.id==="betterinu-lms"?"/lms.jpeg":p.id==="moneytrack"?"/moneytrac.jpeg":p.image?"https://raw.githubusercontent.com/saviyo9037/portfolio/main/public"+p.image:"";
 const wa="https://wa.me/919037348073";
 const skills=["React","Next.js","TypeScript","JavaScript","Node.js","Express","MongoDB","PostgreSQL","MySQL","Tailwind CSS","Python","FastAPI","PHP","Flutter","Git","REST APIs"];
@@ -294,7 +294,8 @@ const [name,setName]=useState("");
 const [service,setService]=useState("Business website");
 const [budget,setBudget]=useState("Not decided");
 const [brief,setBrief]=useState("");
-const list=filter==="Featured"?featured.map(id=>sourceProjects.find(p=>p.id===id)!).filter(Boolean):sourceProjects.filter(p=>filter==="All"||p.categoryLabel===filter);
+const priority=(p:typeof sourceProjects[number])=>p.category==="company"?0:p.categoryLabel==="Freelance Project"?1:p.categoryLabel==="Personal Project"?2:p.categoryLabel==="Demo Project"?3:4;
+const list=filter==="Featured"?featured.map(id=>sourceProjects.find(p=>p.id===id)!).filter(Boolean):sourceProjects.filter(p=>filter==="All"||p.categoryLabel===filter).sort((a,b)=>priority(a)-priority(b));
 return <main>
 <header className="header"><a className="logo" href="#home"><span>SG<span className="accent">.</span></span><small>SAVIYO GEORGE</small></a><nav className={menu?"nav open":"nav"} aria-label="Main navigation">{[["Work","projects"],["Services","services"],["About","about"],["Process","process"]].map(([title,id])=><a key={id} href={"#"+id} onClick={()=>setMenu(false)}>{title}</a>)}</nav><a className="headerCta" href="#contact">Start a project <ArrowUpRight size={15}/></a><button className="menuToggle" aria-label={menu?"Close menu":"Open menu"} aria-expanded={menu} onClick={()=>setMenu(!menu)}>{menu?<X/>:<Menu/>}</button></header>
 <section className="hero wrap" id="home"><div className="heroText"><div className="eyebrow"><span className="statusDot"/> AVAILABLE FOR PROJECT ENQUIRIES</div><h1>Make your<br/>business<br/><em>stand out.</em></h1><p>I'm Saviyo, a full stack developer in Kerala. I build distinctive websites and practical software that help businesses move forward.</p><div className="actions"><a className="btn primary" href="#contact">Discuss your project <ArrowUpRight size={19}/></a><a className="btn ghost" href="#projects">Explore my work <ArrowRight size={17}/></a></div><div className="heroFoot"><MapPin size={16}/> Kerala, India <span/> Working with businesses & startups</div></div>
