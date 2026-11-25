@@ -70,3 +70,139 @@
 
 /* Vault-style private project, scoped to the freelance lab card. */
 .work .lockedProject{background:linear-gradient(145deg,#fff,#f5f6f8);border:1px solid #cbd1da;box-shadow:0 10px 34px #15213608}.work .lockedProject .galleryMedia{background:#111925;border:1px solid #283548}.lockedProject .galleryTop{display:none}.lockedVisual{overflow:hidden;gap:9px;padding:35px 12px 31px;background:radial-gradient(ellipse at 50% 32%,#9db4d51c,transparent 65%)}.vaultGrid{position:absolute;inset:0;pointer-events:none;opacity:.3;background-image:linear-gradient(#9caec514 1px,transparent 1px),linear-gradient(90deg,#9caec514 1px,transparent 1px);background-size:24px 24px;mask-image:radial-gradient(ellipse,#000,transparent 80%)}.vaultStatus{position:absolute;left:14px;top:13px;border:1px solid #ffffff25;background:#ffffff08;border-radius:30px;padding:6px 9px;display:flex;align-items:center;gap:6px;color:#cafa78;font-size:8px;font-weight:700;letter-spacing:1.2px}.vaultStatus>span{width:5px;height:5px;background:#cafa78;border-radius:50%;box-shadow:0 0 8px #cafa7880}.vaultRings{position:absolute;left:50%;top:42%;width:160px;height:160px;transform:translate(-50%,-50%);pointer-events:none}.vaultRings i{position:absolute;border:1px solid #b7c9e21a;border-radius:50%;inset:0}.vaultRings i:nth-child(2){inset:14px;border-style:dashed}.vaultRings i:nth-child(3){inset:29px;border-color:#cafa7826}.lockedVisual .lockEmblem{position:relative;width:65px;height:65px;border-radius:20px;background:linear-gradient(145deg,#354456,#1b2737);border:1px solid #b8cbe347;box-shadow:0 10px 24px #0005,0 0 30px #cafa7812}.lockedVisual>b{position:relative;font-size:clamp(16px,1.5vw,21px);font-weight:600;letter-spacing:-.5px;margin-top:5px}.lockedVisual>small{position:relative;font-size:8px;color:#9eafc3;letter-spacing:1.7px}.vaultFooter{position:absolute;bottom:11px;left:14px;right:14px;border-top:1px solid #ffffff15;padding-top:8px;display:flex;align-items:center;gap:6px;font-size:9px;color:#a9b7cb}.vaultFooter svg{color:#cafa78}.vaultFooter>span{flex:1}.work .lockedProject .lockedNotice{background:#fff;border:1px solid #dfe3e9;border-left:3px solid #64748b;border-radius:9px;box-shadow:0 3px 10px #18283d06}.work .lockedProject .privateLabel{background:transparent;border:1px solid #cdd5df;border-radius:30px;padding:9px 14px;font-weight:600}.work .lockedProject:hover{border-color:#a0aebf}.lockedProject .galleryMedia:hover .vaultRings{transform:translate(-50%,-50%)}@media(max-width:480px){.vaultRings{width:130px;height:130px}.lockedVisual .lockEmblem{width:52px;height:52px;border-radius:15px}.lockedVisual{gap:6px}.vaultFooter{font-size:8px}}
+
+/* Responsive refinement — preserve desktop palette, content and visual identity. */
+main{min-width:0;width:100%}
+.wrap{max-width:1320px}
+.heroText,.compactArt,.featureFrame,.featureCaption>div,.sectionTop>div,.aboutGrid>*,.contactGrid>*,.developerProfile>div,.galleryBody,.lockedNotice>div,.serviceBottom>small{min-width:0}
+.galleryBody h3,.featureCaption b,.service h3,.steps h3,.lockedNotice p,.contactLinks a,.footerNav a{overflow-wrap:anywhere}
+.galleryBody .chips span{max-width:100%;overflow-wrap:anywhere}
+.statusDot,.serviceBottom svg,.contactLinks svg,.btn svg{flex-shrink:0}
+.bentoGallery .bentoItem{min-width:0}
+.bentoGallery .lockedProject .galleryMedia{min-height:230px}
+.quickFilterPanel{overscroll-behavior:contain}
+@media(max-width:1100px){
+  .compactHero{gap:28px;min-height:0}
+  .compactHero h1{font-size:clamp(42px,6.2vw,76px)}
+  .aboutGrid{gap:30px;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}
+  .contactGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+  .proof>div{min-width:0;padding:20px 14px}
+}
+@media(max-width:900px){
+  .compactHero{grid-template-columns:minmax(0,1fr);padding:52px 0 36px;gap:30px}
+  .compactHero h1{font-size:clamp(45px,9vw,76px)}
+  .heroLead{max-width:620px}
+  .compactArt{height:auto;min-height:0;padding:46px 22px 48px}
+  .featureFrame{max-width:620px}
+  .sectionTop{align-items:flex-start;gap:20px}
+  .sectionTop p{max-width:300px}
+  .bentoGallery{gap:16px}
+  .bentoGallery .bentoItem,.bentoGallery .bentoItem:nth-child(-n+2){grid-column:span 6}
+  .bentoGallery .galleryBody h3{font-size:22px}
+  .aboutGrid,.contactGrid{grid-template-columns:minmax(0,1fr)}
+  .aboutGrid .profile{width:min(100%,390px);max-width:none}
+  .profile .portrait{height:clamp(220px,38vw,290px)}
+  .contactGrid>div>p{max-width:600px}
+}
+@media(max-width:760px){
+  html{scroll-padding-top:85px}
+  .wrap{width:calc(100% - 36px)}
+  .header.modernNav{top:max(8px,env(safe-area-inset-top));margin:8px auto 0;width:calc(100% - 28px)}
+  .modernNav .menuToggle{min-width:44px;height:44px}
+  .modernNav .headerCta{min-height:44px}
+  .modernNav .nav.open{max-height:calc(100dvh - 100px);overflow:auto;box-shadow:0 12px 35px #0005;border:1px solid #ffffff26}
+  .modernNav .nav.open a{min-height:44px}
+  .compactHero{padding:44px 0 28px;gap:26px}
+  .compactHero h1{font-size:clamp(40px,10vw,66px);margin:18px 0 22px;line-height:1.01;letter-spacing:-.065em}
+  .heroLead{font-size:16px;margin-bottom:23px}
+  .heroTrust{margin-top:20px;line-height:1.5}
+  .compactArt{height:auto;min-height:0;padding:39px 15px 44px;border-radius:18px}
+  .featureCaption{padding:12px}
+  .featureCaption b{font-size:17px}
+  .featureCaption small{font-size:9px;line-height:1.4}
+  .featureCaption a{width:40px;height:40px}
+  .heroPager{bottom:8px}
+  .heroPager button{padding:13px 8px}
+  .proof{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:0}
+  .proof>div{padding:18px 12px}
+  .proof>div:first-child{padding-left:8px}
+  .proof>div:nth-child(2n){border-right:0}
+  .proof strong{font-size:40px}
+  .proofNote p{font-size:18px;line-height:1.4}
+  .capabilityStrip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 10px;padding:22px 0 44px}
+  .capabilityStrip span{font-size:12px;line-height:1.4}
+  .capabilityStrip svg{flex-shrink:0}
+  section.work,section.about,section.contact,.services,.process,.faq{padding:50px 0}
+  .sectionTop{display:block;margin-bottom:24px}
+  h2{font-size:clamp(36px,8.5vw,56px);line-height:1.04}
+  .sectionTop p{max-width:100%;margin-top:14px;font-size:14px}
+  .work .filterPanel{padding:14px;margin-bottom:18px}
+  .work .filters{gap:7px}
+  .work .filters button{min-height:38px;padding:8px 12px;font-size:12px}
+  .ownershipRow{gap:10px}
+  .ownershipRow select{min-width:0;min-height:42px;font-size:14px}
+  .work .ownershipRow>span{margin-left:0}
+  .work .ownershipRow button{min-height:38px}
+  .bentoGallery .galleryBody{padding:17px}
+  .bentoGallery .galleryMedia{margin:8px 8px 0}
+  .bentoGallery .galleryLink{min-height:40px}
+  .bentoGallery .lockedProject .galleryMedia{min-height:240px}
+  .vaultStatus{top:10px;left:10px}
+  .vaultFooter{left:10px;right:10px;bottom:10px}
+  .lockedVisual{padding:37px 10px 32px}
+  .lockedVisual .lockEmblem{width:58px;height:58px;border-radius:17px}
+  .lockedVisual>b{font-size:18px}
+  .lockedNotice{margin:10px 0 15px}
+  .work .lockedProject .privateLabel{width:auto;max-width:100%;margin-top:auto}
+  .floatingProjectFilter{top:auto;right:12px;bottom:calc(76px + env(safe-area-inset-bottom));transform:none;max-width:calc(100vw - 24px)}
+  .quickFilterPanel{width:310px;max-width:calc(100vw - 24px);max-height:min(56vh,calc(100dvh - 190px));padding:12px}
+  .quickFilterOptions button{min-height:39px}
+  .quickFilterHead button,.quickFilterFoot button{min-height:38px}
+  .quickFilterTrigger{min-height:44px;padding:9px 12px}
+  .floating{right:12px;bottom:calc(14px + env(safe-area-inset-bottom));width:48px;height:48px}
+  .servicesGrid,.steps,.experience{gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service,.steps article{padding:20px;min-height:0}
+  .service h3,.steps h3{font-size:22px}
+  .aboutGrid{gap:26px}
+  .developerProfile{padding:16px;gap:15px}
+  .developerProfile a{max-width:100%;white-space:normal}
+  .faqList summary{font-size:16px;line-height:1.5}
+  .faqList summary span{flex-shrink:0}
+  .contact form{padding:20px;gap:16px}
+  .contact input,.contact select,.contact textarea{font-size:16px;min-height:46px}
+  .contact form .btn{min-height:48px;white-space:normal}
+  .contactLinks a{min-height:44px}
+  .footer{gap:20px;padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+  .footerNav{gap:14px}
+}
+@media(max-width:600px){
+  .bentoGallery{grid-template-columns:minmax(0,1fr)}
+  .bentoGallery .bentoItem,.bentoGallery .bentoItem:nth-child(-n+2){grid-column:1}
+  .bentoGallery .galleryMedia{aspect-ratio:1.8}
+  .bentoGallery .galleryBody h3{font-size:23px}
+  .work .projectOverview p{font-size:14px}
+  .bentoGallery .chips span{font-size:11px}
+  .work .ownershipRow label{flex-basis:100%}
+  .work .ownershipRow select{flex:1 1 100%}
+  .servicesGrid,.steps,.experience{grid-template-columns:minmax(0,1fr)}
+  .contactLinks{grid-template-columns:minmax(0,1fr)}
+  .profile{margin-inline:auto}
+  .footer{display:grid;grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:380px){
+  .wrap{width:calc(100% - 28px)}
+  .compactHero h1{font-size:clamp(34px,10.3vw,40px)}
+  .actions .btn{width:100%;min-height:46px}
+  .eyebrow{font-size:9px;letter-spacing:1px}
+  .compactArt{padding-inline:10px}
+  .featureCaption b{font-size:15px}
+  .capabilityStrip span{font-size:11px}
+  .bentoGallery .galleryBody{padding:14px}
+  .bentoGallery .galleryBody h3{font-size:21px}
+  .bentoGallery .lockedProject .galleryMedia{min-height:225px}
+  .lockedNotice{padding:11px;gap:9px}
+  .quickFilterPanel{max-height:min(52vh,calc(100dvh - 180px))}
+  .contact form{padding:16px}
+}
+@media(max-height:460px) and (max-width:950px){.quickFilterPanel{max-height:calc(100dvh - 145px)}}
+@media(hover:none){.bentoGallery .bentoItem:hover,.btn:hover,.service:hover{transform:none}.galleryItem:hover .galleryMedia img{transform:none}}
