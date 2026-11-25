@@ -129,7 +129,7 @@ const sourceProjects = [
     liveUrl: null,
     githubUrl: null,
     cta: "Internal Platform",
-    image: "/covers/crm-live.svg",
+    image: "/crm%20iro.jpg",
     gradient: "from-blue-500 to-indigo-600",
     featured: true,
   },
