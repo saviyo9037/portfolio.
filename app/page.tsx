@@ -342,13 +342,13 @@ export default function Home(){
     </div>
     <br/><a className="scrollHint" href="#about"><ChevronDown size={16}/> Scroll down</a>
    </div>
-   <div className="portraitWrap"><div className="portraitHalo"></div><img src="/saviyo-coat-cutout.png" alt="Saviyo"/></div>
-   <div className="heroNote">BUILD<br/>DEVELOP<br/>SOLVE<br/>REPEAT</div>
-   <div className="experienceBadge"><strong>10+</strong><span>ERP modules<br/>Professional<br/>experience</span></div>
+   <div className="heroShowcase"><div className="showcaseGlow"/><div className="showcaseMain"><div className="showcaseBar"><span>● ● ●</span><span>BUSINESS SOFTWARE / 01</span></div><img src="/erp.png" alt="ERP and POS project dashboard"/><div className="showcaseCaption"><b>Smarter business operations.</b><small>ERP · POS · Inventory</small></div></div><div className="showcaseMobile"><div className="phoneNotch"/><img src="/moneytrac.jpeg" alt="MoneyTrack mobile application"/></div><div className="showcaseTag">✦ Custom digital solutions</div></div>
+   
+   
   </section>
 
   <section id="about" className="about section">
-   <div className="aboutImage"><img src="/saviyo-cutout.png" alt="Saviyo portrait"/></div>
+   <div className="aboutImage"><div className="aboutPortrait"><img src="/saviyo-cutout.png" alt="Saviyo George"/></div><div className="aboutIdentity"><b>Saviyo George</b><span>Full Stack Developer · Kerala</span><div><strong>40+</strong> UI components <strong>20+</strong> API integrations</div></div></div>
    <div className="aboutContent">
     <div className="label">● ABOUT ME</div><h2>Turning ideas<br/>into digital <em>experiences.</em></h2>
     <p>I'm Saviyo George, a Full Stack Developer with hands-on experience building responsive and scalable web applications using the MERN stack, PHP and modern web technologies. I enjoy solving real-world problems through clean code, practical architecture and meaningful user experiences.</p>
