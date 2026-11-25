@@ -2,3 +2,41 @@
 /* Refined studio composition */
 .header{width:min(1320px,92%);padding:10px 15px;border-radius:14px;background:#141921e8}.headerCta{border-radius:8px}.brandMark{width:42px;height:42px}.compactHero{grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);align-items:center;gap:clamp(28px,5vw,75px);padding:clamp(55px,7vw,105px) 0 58px;min-height:590px}.compactHero h1{font-size:clamp(54px,6.15vw,94px);line-height:.96;letter-spacing:-.07em;margin:24px 0}.heroLead{color:#bac5d5;font-size:17px;line-height:1.75;max-width:490px;margin:0 0 28px}.heroTrust{display:flex;align-items:center;gap:9px;color:#a8b3c4;font-size:12px;margin-top:26px}.heroTrust svg{color:var(--accent);flex-shrink:0}.compactArt{height:clamp(400px,39vw,535px);background:radial-gradient(ellipse at 65% 30%,#526a9c55,transparent 65%),linear-gradient(150deg,#202c42,#171c28);display:flex;align-items:center;justify-content:center;padding:50px 25px 56px}.compactArt .artOrb{width:60%;top:15%;left:20%;opacity:.26}.featureFrame{position:relative;z-index:2;width:100%;border:1px solid #ffffff30;border-radius:13px;background:#111722;overflow:hidden;box-shadow:0 26px 65px #0008;animation:arrive .35s both}.featureImage{position:relative;aspect-ratio:1.65;background:linear-gradient(135deg,#37495f,#1b2538);overflow:hidden}.featureFallback{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:15px;text-align:center;color:#d5e1f3}.featureImage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}.featureCaption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px}.featureCaption div{display:grid;gap:7px}.featureCaption small{font:10px monospace;text-transform:uppercase;color:#aab6c8}.featureCaption b{font-size:clamp(15px,1.7vw,23px);letter-spacing:-.6px}.featureCaption a{display:grid;place-items:center;background:var(--accent);color:var(--ink);width:38px;height:38px;border-radius:8px;flex-shrink:0}.heroPager{position:absolute;bottom:16px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:4}.heroPager button{border:0;background:transparent;padding:8px 5px}.heroPager span{display:block;width:18px;height:4px;border-radius:5px;background:#75849b;transition:width .2s,background .2s}.heroPager button[aria-pressed=true] span{width:33px;background:var(--accent)}.proof{margin-bottom:0}.capabilityStrip{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:24px 0 65px;color:#bac5d5}.capabilityStrip span{display:flex;align-items:center;gap:10px;font-size:13px}.capabilityStrip svg{color:var(--accent)}.workGrid{gap:24px}.leadProject{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr)}.leadProject .workVisual{height:auto;min-height:350px}.leadProject .workBody{padding:clamp(25px,4vw,55px);justify-content:center}.leadProject .workBody h3{font-size:clamp(30px,4vw,50px)}.leadProject .workBody p{display:block}.leadProject .textLink{margin-top:8px}.workCard .visualHeader{padding:8px 11px;background:#101721d9;border-radius:6px;align-items:center}.workCard .workType{font-weight:700}.filterPanel{background:#fff;border:1px solid #dce1e4;border-radius:13px;padding:20px;margin-bottom:25px}.filters button{transition:background .2s,border-color .2s}.filters button:hover{border-color:#526b87}.service01,.service03{background:linear-gradient(135deg,#26364a,#181e27)}.service02{background:linear-gradient(135deg,#233830,#181e27)}.serviceTop svg{padding:10px;width:49px;height:49px;border:1px solid #ffffff22;border-radius:12px;background:#ffffff08}.service h3{margin-top:23px}.aboutGrid{align-items:center}.profile{box-shadow:0 12px 30px #1520340b}.steps article{position:relative;overflow:hidden}.steps article::after{content:"";height:3px;background:var(--accent);width:35px;position:absolute;top:0;left:24px}.contact{background:radial-gradient(ellipse at 20% 20%,#34465e,#202937 65%)}.contact form{box-shadow:0 20px 45px #0003}.footerNav{display:flex;gap:18px;flex-wrap:wrap}.footer p{margin:8px 0 0}.footer a:hover{color:var(--accent)}
 @media(max-width:1000px){.compactHero{min-height:0;gap:25px;padding:65px 0 40px}.compactHero h1{font-size:clamp(45px,6.5vw,68px)}.compactArt{height:400px;padding-inline:18px}.heroLead{font-size:15px}.compactHero .actions .btn{font-size:12px;padding:13px}.leadProject .workVisual{min-height:300px}}@media(max-width:760px){.compactHero{grid-template-columns:1fr;padding:45px 0 30px;gap:30px}.compactHero h1{font-size:clamp(51px,10vw,82px)}.compactArt{height:auto;min-height:340px;padding:48px 18px 48px}.heroTrust{margin-top:20px}.capabilityStrip{padding-bottom:45px;display:grid;grid-template-columns:1fr 1fr}.capabilityStrip span{font-size:12px}.leadProject{display:flex;grid-column:auto}.leadProject .workVisual{height:260px;min-height:0}.leadProject .workBody{padding:25px}.leadProject .workBody h3{font-size:27px}.filterPanel{padding:15px}.footerNav{gap:13px}}@media(max-width:440px){.compactHero h1{font-size:clamp(42px,11vw,54px)}.compactArt{min-height:300px;padding:43px 12px 43px}.featureCaption{padding:12px}.featureCaption a{width:34px;height:34px}.leadProject .workVisual{height:210px}.capabilityStrip span{gap:7px}.heroTrust{font-size:11px}}
+
+/* Optional premium motion layer — remove this block to restore the exact prior UI. */
+@media(prefers-reduced-motion:no-preference){
+  @keyframes softEnter{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes navEnter{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes glowDrift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(3%,-4%) scale(1.08)}}
+  @keyframes calmFloat{0%,100%{translate:0 0}50%{translate:0 -4px}}
+  @keyframes statusPulse{0%,100%{box-shadow:0 0 14px #cafa7888}50%{box-shadow:0 0 20px #cafa78bb}}
+  @keyframes cardAppear{from{opacity:.55;translate:0 12px}to{opacity:1;translate:0 0}}
+  .header{animation:navEnter .5s cubic-bezier(.2,.7,.2,1) both}
+  .heroText .eyebrow{animation:softEnter .55s .06s both}
+  .compactHero h1{animation:softEnter .75s .12s cubic-bezier(.2,.7,.2,1) both}
+  .heroLead{animation:softEnter .65s .23s both}
+  .heroText .actions{animation:softEnter .6s .32s both}
+  .heroTrust{animation:softEnter .6s .41s both}
+  .compactArt{animation:softEnter .8s .16s both}
+  .compactArt .artOrb{animation:glowDrift 12s ease-in-out infinite}
+  .statusDot{animation:statusPulse 3s ease-in-out infinite}
+  .featureFrame{animation:arrive .45s cubic-bezier(.2,.7,.2,1) both}
+  .btn,.headerCta,.featureCaption a,.more,.filters button,.serviceTop svg,.serviceBottom svg,.textLink svg,.floating{transition:transform .25s cubic-bezier(.2,.7,.2,1),background-color .25s,border-color .25s,box-shadow .25s}
+  .workCard{animation:cardAppear .35s ease-out both}
+  .faqList details p{animation:softEnter .25s ease-out both}
+  @media(hover:hover) and (pointer:fine){
+    .headerCta:hover,.more:hover,.featureCaption a:hover{transform:translateY(-2px);box-shadow:0 8px 20px #0002}
+    .btn:hover{box-shadow:0 8px 20px #0002}
+    .service:hover .serviceTop svg{transform:translateY(-3px)}
+    .service:hover .serviceBottom svg,.textLink:hover svg{transform:translate(3px,-3px)}
+    .floating:hover{transform:translateY(-3px)}
+    .compactArt:hover .featureFrame{translate:0 -3px;transition:translate .4s}
+  }
+  @supports(animation-timeline:view()){
+    @keyframes scrollReveal{from{opacity:.65;translate:0 18px}to{opacity:1;translate:0 0}}
+    .sectionTop,.service,.profile,.experience article,.steps article,.faqList,.contactGrid form,.proof>div{animation:scrollReveal linear both;animation-timeline:view();animation-range:entry 0% entry 30%}
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;translate:none!important}
+}
