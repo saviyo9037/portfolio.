@@ -206,3 +206,39 @@ main{min-width:0;width:100%}
 }
 @media(max-height:460px) and (max-width:950px){.quickFilterPanel{max-height:calc(100dvh - 145px)}}
 @media(hover:none){.bentoGallery .bentoItem:hover,.btn:hover,.service:hover{transform:none}.galleryItem:hover .galleryMedia img{transform:none}}
+
+/* Mobile scroll-linked project showcase; desktop grid remains unchanged. */
+.mobileProjectControls,.mobileProjectProgress{display:none}
+@media(max-width:600px){
+  .mobileProjectStage{position:relative;min-width:0}
+  .mobileProjectSticky{min-width:0}
+  .mobileProjectStage.isScrollLinked .mobileProjectSticky{position:sticky;top:84px}
+  .mobileProjectControls{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 8px;color:#151c26}
+  .mobileProjectControls>div:first-child{display:grid;gap:4px}
+  .mobileProjectControls small{font-size:9px;letter-spacing:1px;color:#627082;font-weight:700}
+  .mobileProjectControls b{font-size:14px;font-variant-numeric:tabular-nums}
+  .mobileScrollHint{font-size:11px;color:#627082;display:none}
+  .isScrollLinked .mobileScrollHint{display:block}
+  .mobileProjectArrows{display:flex;gap:7px}
+  .mobileProjectArrows button{width:40px;height:40px;border:1px solid #d3dae4;background:white;color:#151c26;border-radius:50%;display:grid;place-items:center}
+  .mobileProjectArrows button:disabled{opacity:.35;cursor:default}
+  .mobileProjectProgress{height:3px;background:#dfe4eb;display:block;overflow:hidden;border-radius:10px;margin-bottom:12px}
+  .mobileProjectProgress span{display:block;height:100%;background:#526b86;transition:width .2s ease;border-radius:10px}
+  #mobileProjectTrack{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;align-items:stretch;padding:0 0 3px}
+  #mobileProjectTrack::-webkit-scrollbar{display:none}
+  #mobileProjectTrack .bentoItem{flex:0 0 100%;width:100%;min-width:0;scroll-snap-align:start;animation:none;transform:none}
+  .isScrollLinked #mobileProjectTrack{scroll-snap-type:none;overflow-x:hidden;scroll-behavior:auto}
+  .isScrollLinked #mobileProjectTrack .bentoItem{height:min(630px,calc(100dvh - 170px));min-height:0;display:flex;flex-direction:column}
+  .isScrollLinked #mobileProjectTrack .galleryMedia{flex-shrink:0;max-height:clamp(120px,25dvh,230px);min-height:0}
+  .isScrollLinked #mobileProjectTrack .lockedProject .galleryMedia{min-height:180px;max-height:none}
+  .isScrollLinked #mobileProjectTrack .galleryBody{flex:1;min-height:0;overflow-y:auto;scrollbar-width:thin;overscroll-behavior-y:auto}
+  .isScrollLinked #mobileProjectTrack .galleryBody>*{flex-shrink:0}
+  .isScrollLinked #mobileProjectTrack .galleryBody h3{font-size:21px}
+  .isScrollLinked #mobileProjectTrack .galleryBody .privateLabel{margin-top:auto}
+  .isScrollLinked #mobileProjectTrack .lockedVisual{padding:32px 8px 28px;gap:4px}
+  .isScrollLinked #mobileProjectTrack .lockedVisual .lockEmblem{width:43px;height:43px;border-radius:13px}
+  .isScrollLinked #mobileProjectTrack .lockedVisual .lockEmblem svg{width:22px;height:22px}
+  .isScrollLinked #mobileProjectTrack .lockedVisual>b{font-size:15px}
+  .isScrollLinked #mobileProjectTrack .vaultFooter{font-size:8px;padding-top:5px;bottom:7px}
+}
+@media(max-width:600px) and (prefers-reduced-motion:reduce){.mobileProjectProgress span{transition:none}}
