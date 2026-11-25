@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Saviyo George | Freelance Web Developer Kerala",
-  description: "Custom business websites, e-commerce and ERP, POS and CRM software development in Kerala. Discuss your project with Saviyo George."
+  title: "Saviyo George | Independent Web & Software Developer",
+  description: "Independent full stack developer building business websites, e-commerce and custom software. Available for remote and international projects."
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}){
